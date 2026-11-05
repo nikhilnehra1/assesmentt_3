@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h2 { font-size: 22px; color: #38bdf8; }
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+        nav a:hover { color: #38bdf8; }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px 8%;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 10px; }
+        .hero h2 { font-size: 34px; color: #0d9488; margin-bottom: 15px; }
+        .hero p { font-size: 15px; color: #64748b; }
+        .profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ccfbf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 85px;
+        }
+        section { padding: 50px 8%; }
+        section h2 { font-size: 24px; margin-bottom: 20px; }
+        #about p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #334155;
+        }
+        .skills-container { display: flex; gap: 20px; }
+        .skill {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .skill h3 { font-size: 16px; margin-bottom: 5px; color: #38bdf8; }
+        .skill p { font-size: 13px; color: #cbd5e1; }
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+        .project {
+            background: white;
+            width: 75%;
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+        .project h3 { font-size: 18px; margin-bottom: 10px; color: #0d9488; }
+        .project p { font-size: 13px; color: #64748b; }
+        .contact-form {
+            background: white;
+            width: 380px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+        .contact-form label {
+            display: block;
+            font-size: 13px;
+            margin: 12px 0 5px;
+            color: #334155;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #94a3b8;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .contact-form textarea { height: 90px; }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #0d9488;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .contact-form button:hover { background: #0f766e; }
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+        .top-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #0d9488;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Hi, I am</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Building modern web applications with clean code.</p>
+        </div>
+        <div class="profile">👨‍💻</div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Nikhil, and I am currently learning web development. This is my portfolio website, designed to showcase my passion for creating interactive and responsive web pages. I am a student at the university, pursuing a B.Tech degree, and I am deeply interested in technology and coding. I love exploring new skills every day, and I always aim to expand my knowledge in the field of web development. It is an ever-evolving field, so I am dedicated to giving my 100% to develop and build creative projects that make a real impact.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Beginner</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Beginner</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A simple HTML and CSS webpage.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Another awesome mini project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message:</label>
+            <textarea placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Nikhil Nehra. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="top-btn">Back to Top</a>
+
+</body>
+</html>
